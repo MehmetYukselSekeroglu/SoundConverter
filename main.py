@@ -38,7 +38,7 @@ target_format = args["f"].upper()
 output_file = pathlib.Path(output_file)
 
 
-TEMP_DIR = "tmp"
+TEMP_DIR = "tmp"+os.sep
 
 TitlePrinter(f"Powered By Prime")
 
