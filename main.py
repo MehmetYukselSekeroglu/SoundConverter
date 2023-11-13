@@ -78,6 +78,8 @@ if convert_result["success"] == "false":
 output_file_name = str(output_file) + "." +str(target_format).lower()
 shutil.copy(src=convert_result['path'],dst=output_file_name)
 
+InformationPrinter(f"Removing temp files...")
+os.remove(convert_result["path"])
 InformationPrinter(f"File successfully saved: {output_file_name}")
 InformationPrinter(f"Proccess complated.")
 
